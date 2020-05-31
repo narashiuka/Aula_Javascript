@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>Minha Página com Javascript</title>
+        <script type="text/javascript" charset="ISO-8859-1" src="js/main.js"></script>
+    </head>
+    <body onload="Abriu()">
+        <h1>Javascript Site</h1>
+
+        <button type="button" onclick="Onbotao()">Clique Aqui</button>
+        <h3 id="agradecimento" onclick="redirecionar()"></h3>
+
+        <button type="button" onclick="Recarregar()">Recarregar a Página?</button>
+
+        <button type="button" onclick="redirecionar()">Facebook</button>
+
+        <p id="deslize" onmouseover="Passou()" onmouseout="Tirou()">Passe o Mouse por aqui!</p>
+
+        <p id="deslize2" onmouseover="Passou2(this)" onmouseout="Tirou2(this)">Segunda Chance!</p> 
+        <!--Comentário: Acima a função Passou2 e Tirou2 pode ser usada várias vezes, desde que use o parâmetro this dentro dela-->
+    
+        <select onchange="Mudando(this)">
+            <option value="1">Valor 1</option>
+            <option value="2">Valor 2</option>
+            <option value="3">Valor 3</option>
+        </select>
+    
+    </body>
+</html>
